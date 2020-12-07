@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_add_to_stock">
+
+  <fragment
+      android:id="@+id/deleteAll"
+      android:name="com.shiv.inventorytracker.ui.DeleteAllFragment"
+      android:label="Reset"
+      tools:layout="@layout/fragment_delete_all" />
+  <fragment
+      android:id="@+id/nav_add_to_stock"
+      android:name="com.shiv.inventorytracker.ui.addToStock.AddToStockFragment"
+      android:label="@string/menu_add_to_stock"
+      tools:layout="@layout/fragment_add_to_stock" />
+
+  <fragment
+      android:id="@+id/nav_remove_from_stock"
+      android:name="com.shiv.inventorytracker.ui.RemoveFromStockFragment"
+      android:label="@string/menu_remove_from_stock"
+      tools:layout="@layout/fragment_remove_from_stock" />
+
+
+  <fragment
+      android:id="@+id/nav_view_product_stock"
+      android:name="com.shiv.inventorytracker.ui.viewStock.ViewStockFragment"
+      android:label="@string/menu_view_stock"
+      tools:layout="@layout/fragment_product_stock" />
+
+  <fragment
+      android:id="@+id/nav_view_stock"
+      android:name="com.shiv.inventorytracker.ui.ViewProductStockFragment"
+      android:label="@string/menu_view_stock"
+      tools:layout="@layout/fragment_view_stock" />
+
+
+</navigation>

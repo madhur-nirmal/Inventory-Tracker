@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">Inventory Tracker</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="nav_header_title">Inventory Tracker</string>
+  <string name="nav_header_subtitle">android.studio@android.com</string>
+  <string name="nav_header_desc">Navigation header</string>
+  <string name="action_settings">Settings</string>
+
+  <string name="menu_add_to_stock">Add To Stock</string>
+  <string name="menu_view_stock">View Product Stock</string>
+  <string name="menu_product_stock">Product Stock</string>
+  <string name="menu_remove_from_stock">Remove from stock</string>
+  <string name="remove_from_stock">Remove from Stock</string>
+  <string name="view_stock">View Stock</string>
+  <string name="product_id">Product ID</string>
+  <string name="existing_stock">Existing Stock</string>
+  <string name="number_of_units_to_remove">Number of units to remove</string>
+  <string name="remove_stock">Remove Stock</string>
+  <string name="reset">Reset</string>
+</resources>
