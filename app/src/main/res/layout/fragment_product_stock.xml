@@ -9,18 +9,19 @@
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:orientation="vertical">
+      android:orientation="vertical"
+      android:layout_marginLeft="50dp">
 
     <EditText
         android:id="@+id/idEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="250dp"
         android:fontFamily="monospace"
         android:hint="Product ID"
         android:inputType="number"
-        android:textColor="@color/white"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />

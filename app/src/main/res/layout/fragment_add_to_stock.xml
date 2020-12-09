@@ -10,25 +10,43 @@
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
+      android:layout_marginLeft="50dp"
       android:orientation="vertical"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent">
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginStart="50dp">
 
-    <EditText
-        android:id="@+id/idEditText"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="150dp"
-        android:fontFamily="monospace"
-        android:hint="Product ID"
-        android:inputType="number"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/idEditText"
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="monospace"
+          android:gravity="start"
+          android:hint="Product ID"
+          android:inputType="number"
+          android:textColor="@android:color/black"
+          android:textColorHint="@color/black"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/scanBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:tint="@android:color/black"
+          android:backgroundTint="@android:color/black"
+          android:layout_gravity="center"
+          android:background="@drawable/ic_baseline_qr_code_scanner_24" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/nameEditText"
@@ -37,11 +55,10 @@
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="25dp"
         android:fontFamily="monospace"
-
         android:hint="Product Name"
         android:inputType="textCapCharacters"
         android:textAllCaps="true"
-        android:textColor="@color/white"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -55,7 +72,7 @@
         android:fontFamily="monospace"
         android:hint="Price (₹)"
         android:inputType="number"
-        android:textColor="@color/white"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -69,7 +86,7 @@
         android:fontFamily="monospace"
         android:hint="Quantity"
         android:inputType="number"
-        android:textColor="@color/white"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />

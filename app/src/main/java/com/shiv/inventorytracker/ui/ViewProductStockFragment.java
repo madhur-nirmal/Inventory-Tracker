@@ -41,8 +41,6 @@ public class ViewProductStockFragment extends Fragment {
     } else {
       recyclerView.setAdapter(listAdapter);
     }
-
-
     return root;
   }
 

@@ -1,7 +1,6 @@
 package com.shiv.inventorytracker.ui;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,10 +32,10 @@ public class DeleteAllFragment extends Fragment {
               .setPositiveButton("Yes", (dialog, which) -> {
                 int rows = databaseHelper.deleteAll();
                 Toasty.success(root.getContext(), rows + " entries deleted", Toasty.LENGTH_SHORT, true).show();
-              }).setNegativeButton("No", null)
+              })
+              .setNegativeButton("No", null)
               .show();
     });
-
     return root;
   }
 }
